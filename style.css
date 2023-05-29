@@ -1,0 +1,188 @@
+/*body*/
+body {
+    background: url(images/img-fond/image-ordi.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    background: rgba(0, 0, 0, 0.75);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 992px) {
+    body::before {
+        height: 200vh;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body::before {
+        height: 260vh;
+    }
+}
+
+body * {
+    z-index: 2;
+}
+
+/*header*/
+header p#slogan {
+    font-size: 1.2em;
+}
+
+header p#p-titre {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+/* main*/
+/*section1*/
+main section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+main img.icons {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* section2*/
+main img.icons-1 {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+/*section 3*/
+/*zoom des aperçu images*/
+.image {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: contain;
+}
+
+/*card button*/
+
+.card-body-button {
+    border-radius: 5px;
+    width: 300px;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.image img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    transition: all 1s ease;
+    max-height: 290px;
+    object-fit: contain;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+/*CSS personnalisé*/
+
+a
+{
+    background-color: black;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.badge
+{
+    background-color: black;
+}
+
+.btn,.modal-body, .card-body
+{
+    background-color: #454D54;
+    color:white;
+}
+
+.btn
+{
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn:hover
+{
+    background-color: black;
+    color:white;
+}
+
+a:hover
+{
+    background-color: white;
+    color:black;
+}
+
+h4
+{
+    text-align: justify;
+}
+
+/* class perso */
+
+.margin-p {
+    margin-top: 40px;
+}
+
+.light-color {
+    color: var(--bs-body-bg);
+}
+
+.padding15 {
+    padding: 15px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.border {
+    border: 4px solid black;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+/*modal*/
+
+.modal-dialog ul li {
+    list-style-type: none;
+}
+
+ul.card-text {
+    display: contents;
+}
+
+
