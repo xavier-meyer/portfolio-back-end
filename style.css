@@ -85,14 +85,14 @@ main img.icons-1 {
     background-color: transparent;
 }
 
-.image img {
+.image {
     /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
     transition: all 1s ease;
     max-height: 290px;
     object-fit: contain;
 }
 
-.image:hover img {
+.image:hover{
     transform: scale(1.1);
 }
 

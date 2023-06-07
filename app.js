@@ -29,7 +29,7 @@ function boutonsOffcanvas(boutons, marges){
                     offcanvasPortfolio[i].style.marginTop = "25px";
                     offcanvasPortfolio[i].style.marginRight = calcGoutierePetitEcran+"px";
                 }
-                else if(document.body.offsetWidth > 768 && marges == "left"){
+                else if(document.body.offsetWidth > 768 && marges === "left"){
                      // on gère la largeur du offcanvas en fonction de la moitié de la largeur du modal
                      offcanvasPortfolio[i].style.width = modal.offsetWidth/2+"px";
                      // on prend la même margin top que le modal et on l'affecte au offcanvas
